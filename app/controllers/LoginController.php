@@ -1,11 +1,11 @@
-<?php
+<?php 
 
 namespace app\controllers;
 
-class HomeController {
+class LoginController {
 
 	public function index() {
-		var_dump("Home");
+		var_dump("Login");
 	}
 
 }
