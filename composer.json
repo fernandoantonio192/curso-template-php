@@ -1,0 +1,19 @@
+{
+    "name": "start/template",
+    "autoload": {
+        "psr-4": {
+            "app\\": "app/"
+        }
+    },
+    "scripts": {
+        "server": "php -S localhost:8000 -t public"
+    },
+    "authors": [
+        {
+            "name": "fernandoantonio192",
+            "email": "92fernando.antonio@gmail.com"
+        }
+    ],
+    "require": {},
+    "process:timeout": 0
+}
