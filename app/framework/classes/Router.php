@@ -15,7 +15,7 @@ class Router {
 			throw new Exception("Route {$this->path} does not exist");
 		}
 
-		# verifica a uri
+		# verifica o path
 		if (!isset($routes[$this->request][$this->path])) {
 			throw new Exception("Route {$this->path} does not exist");
 		}
@@ -27,7 +27,7 @@ class Router {
 		}
 
 		if (!method_exists($controllerNamespace, $action)) {
-			throw new Exception("Action {$action} does not exist inController {$controller} does not exist");
+			throw new Exception("Action {$action} does not exist in Controller {$controller} does not exist");
 		}
 	}
 
