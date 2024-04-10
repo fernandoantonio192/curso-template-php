@@ -29,3 +29,7 @@ function view(string $view, array $data = []) {
 		var_dump($e->getMessage());
 	}
 }
+
+function redirect($to) {
+	header("Location: {$to}");
+}
