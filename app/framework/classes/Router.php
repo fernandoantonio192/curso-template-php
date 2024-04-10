@@ -41,6 +41,11 @@ class Router {
 
 		[$controller, $action] = explode("@", $routes[$this->request][$this->path]);
 
+		if (str_contains($action, ":")) {
+			[$action, $auth] = explode(":", $action);
+			Auth::check($auth);
+		}
+
 		# pegando o namespace do controller
 		$controllerNamespace = "app\\controllers\\{$controller}";
 
